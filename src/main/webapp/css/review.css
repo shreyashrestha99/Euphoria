@@ -1,0 +1,200 @@
+/*****************Base*****************/
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* Reset & Base Styles */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffd2dc;
+  }
+  
+  /*****************Review Header*****************/
+  .review-header {
+    background: linear-gradient(to right, #ffe0ec, #f8dfd6);
+    padding: 3rem 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .review-header::before {
+    content: "\201C";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 8rem;
+    color: rgba(183, 28, 28, 0.1);
+    z-index: 0;
+  }
+  
+  .review-banner h1 {
+    color: #b71c1c;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    animation: fadeInDown 0.6s ease-out;
+  }
+  
+  .review-banner p {
+    color: #5a2a2a;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  /*****************Clients Reviews*****************/
+  .review-section {
+    padding: 2rem 1rem 4rem;
+    text-align: center;
+  }
+  
+  .review-title {
+    font-size: 2rem;
+    color: #b71c1c;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .review-card {
+    background: #fff4eb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+  }
+  
+  .review-card:hover .review-img img {
+    transform: scale(1.05);
+  }
+  
+  .review-content h3 {
+    margin: 0.5rem 0;
+    color: #b71c1c;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .review-content p {
+    font-size: 0.95rem;
+    color: #333;
+    margin: 0.5rem 0 1rem;
+    line-height: 1.5;
+  }
+  
+  .review-content a {
+    color: #b71c1c;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  .stars {
+    font-size: 1.2rem;
+    color: #ffa500;
+    display: inline-block;
+    animation: starPulse 1.5s infinite ease-in-out;
+  }
+  
+  /*****************Animations*****************/
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes starPulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+  }
+  
+  /*****************Mobile Responsive Design*****************/
+  @media (max-width: 900px) {
+    .review-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .review-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /*****************Utility*****************/
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .page-wrapper {
+    min-height: calc(100vh - 250px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .review-section {
+    flex-grow: 1;
+  }
+  
+  .footer-end {
+    margin-bottom: 0;
+  }
+    
+    background-color: #ffd2dc;
+  }
+  
+  

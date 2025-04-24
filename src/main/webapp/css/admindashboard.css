@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+/* Body */
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: pink;
+    color: rgb(139, 24, 24);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+/* Logo */
+.image-logo {
+
+    padding-right: 30px;
+}
+
+/* Navigation */
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: red;
+    font-size: 16px;
+    padding: auto;
+
+}
+
+.nav-bar a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Icons */
+i {
+    cursor: pointer;
+}
+
+/* User/Admin Links */
+.useradmin-links {
+    color: rgb(139, 24, 24);
+    align-items: center;
+   
+    font-size: 14px;
+    justify-content: flex-end;
+    gap: 15px;
+    display: flex;
+
+}
+
+.useradmin-links a {
+    color: rgb(139, 24, 24);
+    text-decoration: none;
+   
+    padding: 0 5px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+nav-right {
+    gap: 5px;
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+
+.search-bar {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    padding: 2px 6px;
+    border: 8px solid gray;
+    border-radius: 50px;
+    background: whitesmoke;
+
+
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 2px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    background: transparent;
+
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-end;
+
+}
+
+.user-icon a {
+    color: #222;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 400px;
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
